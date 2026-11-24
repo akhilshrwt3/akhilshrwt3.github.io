@@ -260,6 +260,7 @@ a { color: inherit; }
 .ai-item + .ai-item { border-top: 2px solid var(--line); }
 .ai-title { font: 700 1.15rem/1.2 var(--font-display); letter-spacing: -.01em; }
 .ai-text { margin-top: 6px; color: var(--muted); max-width: 64ch; }
+.ai-link { display: inline-block; margin-top: 10px; color: var(--link); font-weight: 600; text-underline-offset: 3px; }
 @media (max-width: 760px) { .ai-item { grid-template-columns: minmax(0, 1fr); padding: 20px 18px; } }
 
 /* ---------- skills ---------- */
@@ -536,6 +537,14 @@ a { color: inherit; }
     <h2 class="h2">Putting generative AI to work</h2>
     <p class="section-intro">Hands-on projects and workflows built with LLMs and AI tooling.</p>
     <div class="section-body ai-list">
+      <div class="ai-item">
+        <ul class="chips" style="align-content:start"><li class="chip chip-mono">Claude artifacts</li><li class="chip chip-mono">Multi-agent</li><li class="chip chip-mono">MCP</li><li class="chip chip-mono">JavaScript</li></ul>
+        <div>
+          <h3 class="ai-title">Get It Done: an AI to-do app with three agents</h3>
+          <p class="ai-text">Built a personal to-do app as a Claude artifact where three agents work through the list: a <strong>Sorter</strong> that files each task into a pile and reads its date and time, a <strong>Doer</strong> that drafts the work, and a <strong>Checker</strong> that reviews it and sends weak drafts back. Through MCP connectors it saves approved emails as Gmail drafts and adds Google Calendar reminders for timed tasks, with nothing ever sent without approval. Anyone can run their own copy on their Claude account.</p>
+          <a class="ai-link" href="https://github.com/akhilshrwt3/Get-It-Done" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+      </div>
       <div class="ai-item">
         <ul class="chips" style="align-content:start"><li class="chip chip-mono">Claude Code</li><li class="chip chip-mono">Open-source LLMs</li></ul>
         <div>
